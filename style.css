@@ -1,0 +1,187 @@
+:root {
+    --dark-color: #242424;
+    --orange-color: orange;
+    --wait-color: #f0f0f0;
+    --grey-color: #d7d7d7;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: var(--font-primary);
+}
+
+#navigation-menu {
+    background-color: var(--dark-color);
+    color: var(--wait-color);
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    font-size: 12px;
+}
+
+#navigation-menu li {
+    display: inline-block;
+    margin-left: 35px;
+    font-weight: bold;
+}
+
+#header-content {
+    color: var(--wait-color);
+    background-image: url("./images/pexels-narda-yescas-1566837.jpg");
+    background-size: cover;
+    padding: 0rem 0rem 18rem 0rem;
+}
+
+#slogan-container h1 {
+    font-family: var(--font-secondary);
+    padding-bottom: 8px;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+#slogan-container p {
+    font-size: 0.90rem;
+}
+
+#header-content button {
+    background-color: var(--orange-color);
+    color: var(--dark-color);
+    font-size: 0.80rem;
+    font-weight: bold;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+}
+
+#slogan-container {
+    padding: 150px 10px 18px 10px;
+}
+
+.pizzas-options h2 {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+ul {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.box {
+    background-color: var(--grey-color);
+    display: inline-block;
+    align-items: start;
+    margin: 0.25rem 0.90rem 2rem 0.90rem;
+    width: 21rem;
+    height: 20rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pizza-item div {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 10rem;
+}
+
+.pizza-item h3 {
+    padding-bottom: 0.5rem;
+}
+
+.pizza-item img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.about-us-section {
+    font-family: var(--font-primary);
+    color: var(--wait-color);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent),
+        url("./images/pexels-eneida-nieves-905847.jpg");
+
+    width: 100%;
+    height: 10rem;
+    background-position: 30% 50%;
+    background-image: cover;
+    padding-top: 3rem;
+}
+
+.about-us-section h2 {
+    font-size: 35px;
+}
+
+.about-us-section p {
+    font-size: 15px;
+    padding-top: 0.5rem;
+}
+
+.contact-section h2 {
+    padding-top: 3rem;
+    font-size: 30px;
+}
+
+.contact-section p {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 20px;
+}
+
+.contacts li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+
+
+    width: 20rem;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.contacts li span {
+    font-weight: bold;
+}
+
+.contacts-anddress button {
+    background-color: var(--orange-color);
+    color: var(--dark-color);
+    font-size: 0.70rem;
+    font-weight: bold;
+    width: 10rem;
+    height: 2.2rem;
+    border-radius: 9px;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+footer p {
+    background-color: var(--dark-color);
+    color: var(--wait-color);
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    font-size: 12px;
+}
