@@ -1,25 +1,26 @@
-name: my page
+name: Deploy site to GitHub Pages
 
 on:
   push:
-      branches: [ main ]
+    branches: [ main ]
   pull_request:
-      branches: [ main ]
+    branches: [ main ]
 
 jobs:
-  login-page:
+  deploy-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
-          node-version: 18
-          
+          fetch-depth: 0
+
       - name: Deploy to GitHub Pages
         if: always()
         uses: crazy-max/ghaction-github-pages@v3
         with:
-            target_branch: gh-pages
-            build_dir: ./src/
+          target_branch: gh-pages
+          build_dir: ./src
+          keep_history: true
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
